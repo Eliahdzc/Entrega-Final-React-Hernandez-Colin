@@ -9,6 +9,7 @@ const Item = ({producto}) => {
             <div className="producto">
                 <h4>{producto.titulo}</h4>
                 <p>Categoria: {producto.categoria}</p>
+                <p>Stock: {producto.stock}</p>
                 <p>Precio: ${producto.precio}</p>
                 <button className="boton-detalles">
                     <Link className="boton-link" to={`/productos/categoria/${producto.id}`}>

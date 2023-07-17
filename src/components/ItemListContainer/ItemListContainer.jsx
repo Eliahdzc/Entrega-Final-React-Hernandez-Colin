@@ -15,34 +15,9 @@ const ItemListContanier = () => {
 
     const {categoria} = useParams()
 
-    console.log("cate", categoria)
 
     useEffect(() => {
-        // datos()
-        //     .then((res) => {
-        //         if(categoria){
-        //             setProductos(res.filter((prod) => prod.categoria === categoria))
-        //             setTitulo(categoria)
-        //         } else {
-
-        //             setProductos(res)
-        //             setTitulo("Productos")
-        //         }
-        //     })
-        
-        // const productosRef = categoria ? query(collection(db, "Productos"), where("categoria", "==", "Brownies")) : collection(db, "Productos");
-        // getDocs(productosRef)
-        //     .then(resp => {
-        //         const nuevosProductos = resp.docs.map ( doc => {
-        //             const data = doc.data();
-        //         })
-        //         setProductos(nuevosProductos)
-        //     })
-        //     .catch(error => console.log(error) )
-        //  }, [categoria])
-        
-        
-        
+ 
         const productosRef = categoria ? query(collection(db, "Productos"), where("categoria", "==", categoria)) :collection(db, "Productos");
         getDocs(productosRef)
             .then((resp) => {
@@ -52,7 +27,7 @@ const ItemListContanier = () => {
                     })
 
                 );
-                setTitulo(categoria)
+                setTitulo(!categoria ? "Productos" : categoria)
             })
 
     }, [categoria])

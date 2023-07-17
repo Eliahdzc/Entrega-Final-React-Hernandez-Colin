@@ -4,7 +4,8 @@ import ItemCount from "../ItemCount/ItemCount";
 import { useParams } from "react-router";
 import { getDoc, doc } from '@firebase/firestore'
 import { db } from '../../firebase/config'
-// import { Item } from "@firebase/analytics";
+import '../ItemDetail/ItemDetail.css'
+import { Link } from "react-router-dom";
 
 
 
@@ -37,24 +38,33 @@ const ItemDetail = (  ) => {
 
     return (
         <div className="container">
-            <div className="producto-detalle">
-                <div>
+            <div className="contenedor-detalles">
+                <div className="titulo-categoria">
                     <h4>{item.categoria}</h4>
                 </div>
 
-                <img src={`../${item.imagen}`} alt={item.titulo} />
-                <div>
-                    <h3 className="titulo">{item.titulo}</h3>
-                    <img src={`../${item.descripcion}`}></img>
-                    <p className="categoria">Categoría: {item.categoria}</p>
-                    <p className="precio">${item.precio}</p>
-                    <ItemCount
-                    cantidad={cantidad}
-                    handleSumar={handleSumar}
-                    handleRestar={handleRestar}
-                    handleAgregar={() => { agregarAlCarrito({...item, id}, cantidad) }}
+                    <div className="producto-detalles">
+                    <div>
+                        <img className="imagen-item" src={`../${item.imagen}`} alt={item.titulo} />
+                    </div>
+                    <div>
+                        <img className="descripcion-item" src={`../${item.descripcion}`}></img>
+                        <p className="categoria">Categoría: {item.categoria}</p>
+                        <p className="categoria">Stock: {item.stock}</p>
+                        <p className="precio">Precio: ${item.precio}</p>
+                    </div>
+                    </div>
+                    <div>
+                        <ItemCount
+                        cantidad={cantidad}
+                        handleSumar={handleSumar}
+                        handleRestar={handleRestar}
+                        handleAgregar={() => { agregarAlCarrito({...item, id}, cantidad) }}
                     />
-                </div>
+                     <button className='boton'>
+                    <Link className='link' to="/Productos">Seguir Comprando</Link>
+                    </button>
+                    </div>
             </div>
         </div>
     )

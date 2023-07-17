@@ -1,5 +1,60 @@
 .tarjeta-carrito {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
+    flex-direction: row;
+    padding: 30px;
 }
+
+.imagen-items {
+    height: 200px;
+    width: 150px;
+    padding: 30px;
+}
+
+.precio-total {
+    text-align: start;
+    padding: 10px;
+    margin-left: 200px;
+}
+
+.titulo-carrito {
+    font-size: 30px;
+    font-family: 'Fredericka the Great';
+    color:#646cff ;
+}
+
+.botones-carrito {
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton {
+    align-content: center;
+    background-color: transparent;
+    font-family: 'Fredericka the Great';
+    color:#646cff ;
+    font-size: larger;
+    padding: .5rem;
+    border-radius: 1rem;
+    border-color: #646cff;
+    transition: .2s;
+ }
+ 
+ .boton a {
+    text-decoration: none;
+ }
+ 
+ .boton:hover {
+    background-color:#E0F1E9;
+    color:#5cce3a;
+
+ }
+ 
+ .link:visited {
+    color:#646cff ;
+ }
+ 
+ .link:hover {
+    color:#5cce3a;
+ }

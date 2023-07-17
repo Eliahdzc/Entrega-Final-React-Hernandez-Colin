@@ -1,0 +1,53 @@
+.contanier {
+    margin: 0;
+    padding: 10rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title {
+    font-family: 'Fredericka the Great';
+    color:#646cff ;
+    font-size: 40px;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.etiqueta {
+    font-family: 'Fredericka the Great';
+    font-size: 20px;
+    margin: .5rem;
+}
+
+.input {
+    border-radius: 1rem;
+    height: 2rem;
+    text-align: center;
+    width: 15rem;
+}
+
+.enviar {
+    flex-direction: row;
+    align-content: center;
+    background-color: transparent;
+    font-family: 'Fredericka the Great';
+    color:#646cff ;
+    font-size: larger;
+    padding: .5rem;
+    border-radius: 1rem;
+    border-color: #646cff;
+    transition: .2s;
+    margin: 2rem;
+}
+
+
+.enviar:hover {
+    background-color:#E0F1E9;
+    color:#5cce3a;
+
+}

@@ -1,5 +1,7 @@
 import '../Inicio/Inicio.css'
 import {useState} from "react"
+import { Link } from 'react-router-dom'
+
 
 const Inicio = () => {
 
@@ -37,7 +39,11 @@ const Inicio = () => {
                 <div className='cont-saludo'>
                     <h2 className='saludo'>Y nos gustaría que sea aún mas dulce para ti</h2>
                     <h2 className='saludo'>{nombre}</h2>
+                    <button className='boton'>
+                    <Link className='link' to="/Productos">Ver Productos</Link>
+                    </button>
                 </div>
+                
                 : null
             }
         </div>

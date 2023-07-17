@@ -5,15 +5,32 @@
 }
 
 
-.producto-detalle {
+.producto-detalles {
     padding-block: 2rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
 }
 
-.container {
-    max-width: 1140px;
-    padding-inline: 1.5rem;
-    margin: 0 auto;
+.contenedor-detalles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titulo-item {
+    font-family: 'Fredericka the Great';
+    color:#646cff ;
+    font-size: 40px;
+}
+
+.imagen-item {
+    display: flex;
+    height: 400px;
+    width: 350px;
+}
+
+.descripcion-item {
+    display: flex;
+    height: 400px;
 }

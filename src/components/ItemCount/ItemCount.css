@@ -1,0 +1,36 @@
+
+.contador {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.botones {
+    flex-direction: row;
+    align-content: center;
+    background-color: transparent;
+    font-family: 'Fredericka the Great';
+    color:#646cff ;
+    font-size: larger;
+    padding: .5rem;
+    border-radius: 1rem;
+    border-color: #646cff;
+    transition: .2s;
+ }
+ 
+ .boton a {
+    text-decoration: none;
+ }
+ 
+ .botones:hover {
+    background-color:#E0F1E9;
+    color:#5cce3a;
+
+ }
+ 
+ .link:visited {
+    color:#646cff ;
+ }
+ 
+ .link:hover {
+    color:#5cce3a;
+ }

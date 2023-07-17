@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import '../Contacto/Contacto.css'
 
 const Contacto = () => {
 
@@ -14,9 +15,14 @@ const Contacto = () => {
         <h1 className="main-title">Contacto</h1>
         <form className="formulario" onSubmit={handleSubmit(enviar)}>
 
-            <input type="text" placeholder="Ingresá tu nombre" {...register("nombre")} />
-            <input type="email" placeholder="Ingresá tu e-mail" {...register("email")} />
-            <input type="phone" placeholder="Ingresá tu teléfono" {...register("telefono")} />
+            <label className='etiqueta' htmlFor="nombre"> Nombre </label>
+            <input className='input' type="text" {...register("nombre")} />
+            <label className='etiqueta' htmlFor="nombre"> Apellido </label>
+            <input className='input' type="text" {...register("nombre")} />
+            <label className='etiqueta' htmlFor="nombre"> email </label>
+            <input className='input' type="email" {...register("email")} />
+            <label className='etiqueta' htmlFor="nombre"> Teléfono </label>
+            <input className='input' type="phone" {...register("telefono")} />
 
             <button className="enviar" type="submit">Enviar</button>
 
@@ -25,5 +31,6 @@ const Contacto = () => {
 
   )
 }
+
 
 export default Contacto
