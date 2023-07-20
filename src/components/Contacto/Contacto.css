@@ -7,7 +7,7 @@
 
 .main-title {
     font-family: 'Fredericka the Great';
-    color:#646cff ;
+    color: #646cff;
     font-size: 40px;
 }
 
@@ -36,7 +36,7 @@
     align-content: center;
     background-color: transparent;
     font-family: 'Fredericka the Great';
-    color:#646cff ;
+    color: #646cff;
     font-size: larger;
     padding: .5rem;
     border-radius: 1rem;
@@ -47,7 +47,7 @@
 
 
 .enviar:hover {
-    background-color:#E0F1E9;
-    color:#5cce3a;
+    background-color: #E0F1E9;
+    color: #5cce3a;
 
 }

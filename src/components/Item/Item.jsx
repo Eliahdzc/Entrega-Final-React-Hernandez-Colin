@@ -1,7 +1,7 @@
 import "../Item/Item.css"
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
-const Item = ({producto}) => {
+const Item = ({ producto }) => {
 
     return (
         <div className="producto">

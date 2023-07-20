@@ -36,25 +36,25 @@ const Carrito = () => {
 
             {
                 carrito.length > 0 ?
-                <div>
-                    <h2 className='precio-total'>Precio total: ${precioTotal()}</h2>
-                    <div className='botones-carrito'>
-                    <button className='boton' onClick={handleVaciar}>Vaciar</button>
-                    <button className='boton'>
-                     <Link className='link' to="/checkout">Finalizar compra</Link>
-                    </button>
-                    <button className='boton'>
-                    <Link className='link' to="/Productos">Seguir Comprando</Link>
-                    </button>
-                    </div>
-                </div> :
-                <>
-                    <h2>El carrito está vacío :(</h2>
-                    <button className='boton'>
-                    <Link className='link' to="/Productos">Seguir Comprando</Link>
-                    </button>
+                    <div>
+                        <h2 className='precio-total'>Precio total: ${precioTotal()}</h2>
+                        <div className='botones-carrito'>
+                            <button className='boton' onClick={handleVaciar}>Vaciar</button>
+                            <button className='boton'>
+                                <Link className='link' to="/checkout">Finalizar compra</Link>
+                            </button>
+                            <button className='boton'>
+                                <Link className='link' to="/Productos">Seguir Comprando</Link>
+                            </button>
+                        </div>
+                    </div> :
+                    <>
+                        <h2 className='parrafo'>El carrito está vacío :(</h2>
+                        <button className='boton'>
+                            <Link className='link' to="/Productos">Seguir Comprando</Link>
+                        </button>
 
-                </>
+                    </>
             }
 
         </div>

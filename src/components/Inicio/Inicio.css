@@ -59,7 +59,7 @@
 .cont-saludo {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -68,4 +68,11 @@
     font-family: 'Grand Hotel', cursive;
     font-size: 80px;
     color: #646cff;
+}
+
+.productos-inicio {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    padding-block: 2rem;
 }

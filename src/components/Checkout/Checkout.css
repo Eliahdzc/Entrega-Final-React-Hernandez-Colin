@@ -7,8 +7,12 @@
 
 .main-title {
     font-family: 'Fredericka the Great';
-    color:#646cff ;
+    color: #646cff;
     font-size: 40px;
+}
+
+.parrafo {
+    font-family: 'Fredericka the Great';
 }
 
 .formulario {
@@ -36,18 +40,18 @@
     align-content: center;
     background-color: transparent;
     font-family: 'Fredericka the Great';
-    color:#646cff ;
+    color: #646cff;
     font-size: larger;
     padding: .5rem;
     border-radius: 1rem;
     border-color: #646cff;
     transition: .2s;
     margin: 2rem;
- }
- 
-  
- .enviar:hover {
-    background-color:#E0F1E9;
-    color:#5cce3a;
+}
 
- }
+
+.enviar:hover {
+    background-color: #E0F1E9;
+    color: #5cce3a;
+
+}

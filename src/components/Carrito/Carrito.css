@@ -21,7 +21,11 @@
 .titulo-carrito {
     font-size: 30px;
     font-family: 'Fredericka the Great';
-    color:#646cff ;
+    color: #646cff;
+}
+
+.parrafo {
+    font-family: 'Fredericka the Great';
 }
 
 .botones-carrito {
@@ -33,28 +37,28 @@
     align-content: center;
     background-color: transparent;
     font-family: 'Fredericka the Great';
-    color:#646cff ;
+    color: #646cff;
     font-size: larger;
     padding: .5rem;
     border-radius: 1rem;
     border-color: #646cff;
     transition: .2s;
- }
- 
- .boton a {
-    text-decoration: none;
- }
- 
- .boton:hover {
-    background-color:#E0F1E9;
-    color:#5cce3a;
+}
 
- }
- 
- .link:visited {
-    color:#646cff ;
- }
- 
- .link:hover {
-    color:#5cce3a;
- }
+.boton a {
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: #E0F1E9;
+    color: #5cce3a;
+
+}
+
+.link:visited {
+    color: #646cff;
+}
+
+.link:hover {
+    color: #5cce3a;
+}

@@ -26,11 +26,11 @@ const Checkout = () => {
         const pedidosRef = collection(db, "pedidos");
 
         addDoc(pedidosRef, pedido)
-        .then((doc) => {
-            setPedidoId(doc.id);
-            vaciarCarrito();
-            calcularStock(carrito)
-        })
+            .then((doc) => {
+                setPedidoId(doc.id);
+                vaciarCarrito();
+                calcularStock(carrito)
+            })
     }
 
     const calcularStock = (carrito) => {
@@ -62,30 +62,30 @@ const Checkout = () => {
         return (
             <div className="container">
                 <h1 className="main-title">Muchas gracias por tu compra</h1>
-                <p>Tu número de pedido es: {pedidoId}</p>
+                <p className='parrafo'>Tu número de pedido es: {pedidoId}</p>
             </div>
         )
     }
 
-  return (
-    <div className="container">
-        <h1 className="main-title">Finalizar compra</h1>
-        <form className="formulario" onSubmit={handleSubmit(comprar)}>
+    return (
+        <div className="container">
+            <h1 className="main-title">Finalizar compra</h1>
+            <form className="formulario" onSubmit={handleSubmit(comprar)}>
 
-            <label className='etiqueta' htmlFor="nombre"> Nombre </label>
-            <input className='input' type="text" {...register("nombre")} />
-            <label className='etiqueta' htmlFor="nombre"> Apellido </label>
-            <input className='input' type="text" {...register("nombre")} />
-            <label className='etiqueta' htmlFor="nombre"> email </label>
-            <input className='input' type="email" {...register("email")} />
-            <label className='etiqueta' htmlFor="nombre"> Teléfono </label>
-            <input className='input' type="phone" {...register("telefono")} />
+                <label className='etiqueta' htmlFor="nombre"> Nombre </label>
+                <input className='input' type="text" {...register("nombre")} />
+                <label className='etiqueta' htmlFor="nombre"> Apellido </label>
+                <input className='input' type="text" {...register("nombre")} />
+                <label className='etiqueta' htmlFor="nombre"> email </label>
+                <input className='input' type="email" {...register("email")} />
+                <label className='etiqueta' htmlFor="nombre"> Teléfono </label>
+                <input className='input' type="phone" {...register("telefono")} />
 
-            <button className="enviar" type="submit">Comprar</button>
+                <button className="enviar" type="submit">Comprar</button>
 
-        </form>
-    </div>
-  )
+            </form>
+        </div>
+    )
 }
 
 

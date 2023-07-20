@@ -3,10 +3,10 @@
     height: 150px;
     width: 100px;
     display: flex;
-    
+
 }
 
-.carrito-nombre  {
+.carrito-nombre {
     display: flex;
     font-weight: 500;
     color: #646cff;

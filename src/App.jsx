@@ -13,27 +13,27 @@ import Checkout from './components/Checkout/Checkout'
 function App() {
 
   return (
-<div>
-  <CartProvider>
-    <BrowserRouter>
+    <div>
+      <CartProvider>
+        <BrowserRouter>
 
-      <NavBar />
+          <NavBar />
 
-      <Routes>
-        <Route path="/" element={<Inicio />} />
-        <Route path="/productos" element={<ItemListContainer />} />
-        <Route path="/productos/:categoria" element={<ItemListContainer />} />
-        <Route path="/productos/:categoria/:id" element={<ItemDetail />}/>
-        <Route path="/contacto" element={<Contacto />}/>
-        <Route path="/carrito" element={<Carrito />}/>
-        <Route path="/checkout" element={<Checkout />}/>
-      </Routes>
+          <Routes>
+            <Route path="/" element={<Inicio />} />
+            <Route path="/productos" element={<ItemListContainer />} />
+            <Route path="/productos/:categoria" element={<ItemListContainer />} />
+            <Route path="/productos/:categoria/:id" element={<ItemDetail />} />
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/carrito" element={<Carrito />} />
+            <Route path="/checkout" element={<Checkout />} />
+          </Routes>
 
-    </BrowserRouter>
+        </BrowserRouter>
 
-    </CartProvider>
+      </CartProvider>
 
-</div>
+    </div>
   )
 }
 

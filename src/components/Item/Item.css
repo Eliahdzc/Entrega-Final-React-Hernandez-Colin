@@ -11,18 +11,18 @@
    overflow: hidden;
 }
 
-.producto > div {
+.producto>div {
    display: flex;
    flex-direction: column;
    font-family: 'Fredericka the Great';
-   color:#646cff ;
+   color: #646cff;
    border-style: double;
-   border-color:#646cff  ;
+   border-color: #646cff;
    border-bottom-left-radius: 1rem;
    border-bottom-right-radius: 1rem;
 }
 
-.producto > img {
+.producto>img {
    width: 100%;
    object-fit: cover;
    border-top-left-radius: 1rem;
@@ -33,7 +33,7 @@
    align-content: center;
    background-color: transparent;
    font-family: 'Fredericka the Great';
-   color:#646cff ;
+   color: #646cff;
    font-size: larger;
    padding: .5rem;
    border-radius: 1rem;
@@ -46,15 +46,15 @@
 }
 
 .boton-detalles:hover {
-   background-color:#E0F1E9;
+   background-color: #E0F1E9;
 }
 
 .boton-link:visited {
-   color:#646cff ;
+   color: #646cff;
 }
 
 .boton-link:hover {
-   color:#5cce3a;
+   color: #5cce3a;
 }
 
 

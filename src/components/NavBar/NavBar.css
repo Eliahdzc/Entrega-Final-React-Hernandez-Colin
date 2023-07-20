@@ -3,7 +3,7 @@
     padding: 0;
     display: flex;
     height: 150px;
-    background-color:#E0F1E9 ;
+    background-color: #E0F1E9;
     border-radius: 15px;
 }
 
@@ -21,12 +21,12 @@
     list-style-type: none;
     font-size: 20px;
     font-family: 'Fredericka the Great';
-    color:#646cff ;
+    color: #646cff;
     text-decoration: none;
 }
 
 .lista:hover {
-    color:#5cce3a;
+    color: #5cce3a;
     cursor: pointer;
 }
 

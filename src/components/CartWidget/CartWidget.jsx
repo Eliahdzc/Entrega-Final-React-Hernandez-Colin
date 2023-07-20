@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import carrito from  '../../assets/images/carrito.png'
+import carrito from '../../assets/images/carrito.png'
 import '../CartWidget/CartWidget.css'
 import { CartContext } from '../../context/CartContext'
 
@@ -14,7 +14,7 @@ const CarWidget = () => {
         Carrito
         <span className='contador-carrito'>{cantidadEnCarrito()}</span>
         <img className='imagen-carrito' src={carrito} alt="" />
-        </Link>
+      </Link>
     </div>
   )
 }
