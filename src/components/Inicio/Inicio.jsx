@@ -26,14 +26,9 @@ const Inicio = () => {
         const q = query(collection(db, "Productos"), limit(5))
         getDocs (q)
             .then((resp) =>{
-                console.log("array", resp)
-
-                resp.docs.map(elem => {
-                    console.log("resultado", elem.data())
-                })
                 setProductosInicio(
                     resp.docs.map((doc) => {
-                        return { ...doc.data()}
+                        return { ...doc.data(), id: doc.id}
                     })
                 )
             })
